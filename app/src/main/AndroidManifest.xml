@@ -20,7 +20,8 @@
         </activity>
         <activity android:name=".SettingActivity" />
         <activity android:name=".TextActivity" />
-        <activity android:name=".SpeechActivity"></activity>
+        <activity android:name=".SpeechActivity" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

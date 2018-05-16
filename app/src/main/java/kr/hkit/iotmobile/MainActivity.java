@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         Button settingButton = findViewById(R.id.settingButton);
         settingButton.setOnClickListener(onSettingListener);
 
-        ImageButton imgButton = findViewById(R.id.imgButton);
-        imgButton.setOnClickListener(onImgListener);
+        Button MenuButton = findViewById(R.id.menuButton);
+        MenuButton.setOnClickListener(onMenuListener);
     }
 
 
@@ -57,12 +57,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private View.OnClickListener onImgListener = new View.OnClickListener() {
+    private View.OnClickListener onMenuListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getBaseContext(),SpeechActivity.class);
+          Intent intent = new Intent(getBaseContext(),MenuActivity.class);
 
-            startActivity(intent);
+          startActivity(intent);
         }
     };
+
+
 }

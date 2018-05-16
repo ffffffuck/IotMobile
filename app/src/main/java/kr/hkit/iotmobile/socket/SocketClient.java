@@ -54,6 +54,9 @@ public class SocketClient extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        socketClientListener.onReceiveMessage(receiveMessage);
+
+        if(socketClientListener != null) {
+            socketClientListener.onReceiveMessage(receiveMessage);
+        }
     }
 }
