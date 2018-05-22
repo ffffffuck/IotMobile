@@ -11,10 +11,54 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LED 상태 : "
+            android:textSize="26dp"
+            android:textColor="#bfbfbf"
+            />
+        <TextView
+            android:id="@+id/ledTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textColor="#bfbfbf"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TV 상태 : "
+            android:textSize="26dp"
+            android:textColor="#bfbfbf"
+            />
+        <TextView
+            android:id="@+id/tvTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26dp"
+            android:textColor="#bfbfbf"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
         <Button
             android:id="@+id/ledButton"
             android:layout_width="0dp"
@@ -24,10 +68,11 @@
             android:textSize="30dp"
             android:layout_margin="10dp"/>
         <Button
+            android:id="@+id/tvButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="버튼2"
+            android:text="TV"
             android:textSize="30dp"
             android:layout_margin="10dp"/>
         <Button
@@ -67,68 +112,5 @@
             android:textSize="30dp"
             android:layout_margin="10dp"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="버튼1"
-            android:textSize="30dp"
-            android:layout_margin="10dp"
-            />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="버튼2"
-            android:textSize="30dp"
-            android:layout_margin="10dp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="버튼3"
-            android:textSize="30dp"
-            android:layout_margin="10dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-
-        >
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="버튼1"
-            android:textSize="30dp"
-            android:layout_margin="10dp"
-            />
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="버튼2"
-            android:textSize="30dp"
-            android:layout_margin="10dp"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="버튼3"
-            android:textSize="30dp"
-            android:layout_margin="10dp"/>
-    </LinearLayout>
-
-
 
 </LinearLayout>
